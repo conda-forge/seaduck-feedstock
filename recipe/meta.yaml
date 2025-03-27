@@ -1,5 +1,5 @@
 {% set name = "seaduck" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/seaduck-{{ version }}.tar.gz
-  sha256: 78207900847a55efd437bfb59c78f458df593b5f3bafc63d15fbee232aa7b852
+  sha256: 5f346f769a93fd1fc147ab66be3cc8e422884c48e9474fc6760ae33eef76ee67
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
